@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f3434;
+  color: #fff;
+}
+
+.container {
+  background-color: #493e3e;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 25px 35px;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.bars {
+  display: flex;
+  align-items: center;
+}
+
+.bar:not(:last-child) {
+  margin-right: 20px;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.percentage {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.fill {
+  width: 50px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: #433737;
+  margin: 5px 0;
+  position: relative;
+}
+
+.fill::after {
+  height: inherit;
+  border-radius: inherit;
+  background-color: #d5634e;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 27.5%;
+  left: 0px;
+  bottom: 0px;
+}
+
+.bar:nth-child(2) .fill::after {
+  height: 33.5%;
+}
+.bar:nth-child(3) .fill::after {
+  height: 15.5%;
+}
+.bar:nth-child(4) .fill::after {
+  height: 12.5%;
+}
+.bar:nth-child(5) .fill::after {
+  height: 5.5%;
+}
+
+.age {
+  font-size: 10px;
+  font-weight: 600;
+}
